@@ -1,0 +1,202 @@
+/* General Body Styling */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.container {
+  display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 200px;
+  /* background-color: #343a40; */
+  color: #050202;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar ul li:hover {
+  background-color: #495057;
+  padding-left: 10px;
+  transition: 0.3s;
+}
+
+/* Top Navigation Styling */
+
+.logo {
+  width: 90px;
+  margin-top: 10px;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 250px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+}
+
+.topnav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.topnav ul li {
+  margin: 0 20px;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.topnav ul li:hover {
+  border-bottom: 2px solid #007bff;
+  transition: 0.3s;
+}
+
+/* Table Styling */
+.client-table {
+  margin-left: 270px;
+  margin-top: 20px;
+  width: calc(100% - 270px);
+  background-color: white;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.client-table th,
+.client-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.client-table th {
+  background-color: #007bff;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.client-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.client-table td {
+  font-size: 14px;
+  color: #333;
+}
+
+.client-table .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-table .actions button {
+  margin-right: 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions buttons {
+  cursor: pointer;
+}
+
+.client-table .actions .view-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.client-table .actions .edit-btn {
+  background-color: #ffc107;
+  color: white;
+}
+
+.client-table .actions .delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Button Hover Effects */
+.client-table .actions button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+/* Pagination Styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination span {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .topnav {
+    margin-left: 0;
+  }
+
+  .client-table {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .pagination {
+    flex-direction: column;
+  }
+
+  .pagination button {
+    margin: 10px 0;
+  }
+}
